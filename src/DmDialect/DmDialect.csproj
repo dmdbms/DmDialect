@@ -11,7 +11,7 @@
   <PropertyGroup>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>dmdbms.$(AssemblyName)</PackageId>
-    <Version>5.1.0-preview.1</Version>
+    <Version>5.1.0</Version>
     <Authors>dmdbms</Authors>
     <Description>DmDialect is a NHibernate driver for DaMeng.适用于达梦数据库的NHibernate驱动.</Description>
     <PackageProjectUrl>https://github.com/dmdbms/DmDialect</PackageProjectUrl>
