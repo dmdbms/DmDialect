@@ -8,8 +8,30 @@
     <LangVersion>Preview</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
-  <PropertyGroup />
+  <PropertyGroup>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>dmdbms.$(AssemblyName)</PackageId>
+    <Version>5.1.0-preview.1</Version>
+    <Authors>dmdbms</Authors>
+    <Description>DmDialect is a NHibernate driver for DaMeng.适用于达梦数据库的NHibernate驱动.</Description>
+    <PackageProjectUrl>https://github.com/dmdbms/DmDialect</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/dmdbms/DmDialect</RepositoryUrl>
+    <PackageTags>DM8;DaMeng;NHibernate;达梦</PackageTags>
+  </PropertyGroup>
   <ItemGroup>
+    <None Include="..\..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="dmdbms.DmProvider" Version="1.1.2" />
     <PackageReference Include="NHibernate" Version="5.3.11" />
   </ItemGroup>
 </Project>

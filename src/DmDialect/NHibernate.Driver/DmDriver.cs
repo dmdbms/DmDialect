@@ -20,7 +20,7 @@ public class DmDriver : ReflectionBasedDriver, IEmbeddedBatcherFactoryProvider
 	System.Type IEmbeddedBatcherFactoryProvider.BatcherFactoryClass => typeof(DmBatchingBatcherFactory);
 
 	public DmDriver()
-		: base("Dm", "DmProvider, Version=1.1.0.0, Culture=neutral, PublicKeyToken=7a2d44aa446c6d01", "Dm.DmConnection", "Dm.DmCommand")
+		: base("Dm", "DmProvider", "Dm.DmConnection", "Dm.DmCommand")
 	{
 	}
 
